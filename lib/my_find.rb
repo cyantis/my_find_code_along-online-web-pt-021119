@@ -9,6 +9,4 @@ def my_find(collection)
 end
 
 collection = (1..100).to_a
-x = my_find(collection) {|i| i % 3 == 0 and i % 5 == 0 }
-
-puts x
+my_find(collection) {|i| i % 3 == 0 and i % 5 == 0 }
