@@ -4,6 +4,7 @@ def my_find(collection)
   i = 0
   while i < collection.length
     puts collection[i] if yield(collection[i])
+    break
     i += 1
   end
 end
